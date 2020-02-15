@@ -8,6 +8,9 @@ $veryDarkViolet: hsl(270, 9%, 17%);
 $darkGrayishViolet: hsl(273, 4%, 51%);
 $veryLightGray: hsl(0, 0%, 98%);
 
+
+
+
 body {
     font-size: 16px;
     font-family: 'Karla', sans-serif;
@@ -19,14 +22,15 @@ body {
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
     } 
 
 .header {
     border-bottom: 1px solid white;
-    z-index: 99;
+    z-index: 9;
     grid-area: 1 / 1 / 2 / 6;
     height: 5rem;
     background-color: white;
@@ -82,12 +86,13 @@ body {
 }
 
 .intro {
+
     border-top: 1px solid $darkViolet;
     width: 100%;
     grid-area: 2 / 1 / 3 / 6;
     background-color: $darkViolet;
     height: 600px;
-    margin-top: -28rem;
+    margin-top: -29rem;
     color: white;
     #leftLines {
         position: relative;
@@ -106,7 +111,7 @@ body {
     img {
         margin-top: -20.5rem;
         float: right;
-        margin-right: 10.5rem;
+        margin-right: 11.5rem;
         
 
     }
@@ -190,11 +195,9 @@ body {
     .left {
         margin-top: 5rem;
         margin-left: 10.3rem;
-        border: 1px solid red;
         width: 360px;
     }
     .center {
-        border: 1px solid red;
         width: 360px;
         margin-top: -16.25rem;
         margin-left: 33.5rem;
@@ -204,30 +207,21 @@ body {
         float: right;
         margin-top: -25.25rem;
         margin-right: 10.5rem;
-        border: 1px solid red;
         width: 360px;
         
 
     }
 
     .inset {
-        
         width: 1110px;
         max-width: 100%;
         height: 250px;
         max-height: 100%;
         background-color: $darkViolet;
         margin: 0 auto;
-        h1 {
-            color: white;
-            font-size: 3.5rem;
-            width: 500px;
-            margin-left: 7rem;
-            padding-top: 3.5rem;
-            line-height: 1.2;
-        }
         a {
-            z-index: 99;
+            position: relative;
+            z-index: 2;
             float: right;
             text-decoration: none;
             width: 160px;
@@ -239,19 +233,34 @@ body {
             padding-top: 10px;
             padding-bottom: 10px;
             text-transform: uppercase;
-
         }
         a:hover {
             cursor: pointer;
             background-color: white;
             color: $veryDarkViolet;
             transition: ease-out 500ms;
+            
         }
+        h1 {
+            color: white;
+            font-size: 3.5rem;
+            width: 500px;
+            margin-left: 7rem;
+            padding-top: 3.5rem;
+            line-height: 1.2;
+        }
+        
         img {
-            position: relative;
+            z-index: -9999;
             float: right;
             margin-top: -16.90rem;
+            
         }
+       
+        
+
+
+
     }
 }
 
@@ -259,18 +268,17 @@ body {
 
 
 .footer {
-    
-    grid-area: 5 / 1 / 6 / 6;
+    height: 400px;
+    grid-area: 6 / 1 / 6 / 6;
     background-color: $veryLightGray;
-    border: 1px solid red;
-    margin-top: -8rem;
-    #logo {        
+    margin-top: -5rem;
+    #logo {     
+        position: relative;
         float: left; 
         margin-top: 3.75rem;
         margin-left: 10.5rem;
     }
     .footLines {
-        
         margin-left: -17.5rem;
     }
     .sBox {
@@ -282,46 +290,140 @@ body {
         padding-left: 12px;
        
     }
+    .social:hover,
+.social:focus {
+    filter: invert(0%) sepia(6%) saturate(0%) hue-rotate(100deg) brightness(50%) contrast(106%);
+}
+    
     
     .siteMap {
-        border-top: 1px solid $darkGrayishViolet;
+        border-top: .5px solid $darkGrayishViolet;
         margin-top: -6.5rem;
         margin-left: auto;
         margin-right: auto;
         width: 1111px;
         height: 225px;
-        border: 1px solid red;
+        font-weight: 700;
         div {
             display: inline-block;
-            border: 1px solid gold;
-            width: 170px;
-            height: 180px;  
+            width: 270px;
+            margin: 0 auto;
+           
         }
+       
+   
+        .dummy {
+            display: none;
+            visibility: hidden;
+        }
+        
         div.company a {
             text-decoration: none;
             display: block;
             color: $veryDarkViolet;
+            text-transform: uppercase;
+            line-height: 2;
         }
+
+        div.company a:hover {
+            text-decoration: underline;
+        }
+        div.help a:hover {
+            text-decoration: underline;
+        }
+        div.contact a:hover {
+            text-decoration: underline;
+        }
+        div.others a:hover {
+            text-decoration: underline;
+        }
+
+        
+
         div.help a {
             text-decoration: none;
             display: block;
+            text-transform: uppercase;
+            line-height: 2;
+            color: $veryDarkViolet;
         }
         div.contact a {
             text-decoration: none;
             display: block;
+            text-transform: uppercase;
+            line-height: 2;
+            color: $veryDarkViolet;
         }
         div.others a {
             text-decoration: none;
             display: block;
+            text-transform: uppercase;
+            line-height: 2;
+            color: $veryDarkViolet;
         }
         div.company .head {
-            color: red;
+            color:$darkGrayishViolet;
             text-transform: uppercase;
             font-weight: 400;
             list-style: none;
-            
+            margin-bottom: 1rem; 
         }
+        div.company .head:hover {
+            text-decoration: none;
+        }
+        div.help .head:hover {
+            text-decoration: none;
+        }
+        div.contact .head:hover {
+            text-decoration: none;
+        }
+        div.others .head:hover {
+            text-decoration: none;
+        }
+
+        div.help .head {
+            color:$darkGrayishViolet;
+            text-transform: uppercase;
+            font-weight: 400;
+            list-style: none;
+            padding-top: 3rem;
+            margin-bottom: 1rem;  
+        }
+        div.contact .head {
+            color:$darkGrayishViolet;
+            text-transform: uppercase;
+            font-weight: 400;
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-top: 3rem;  
+        }
+        div.others .head {
+            color:$darkGrayishViolet;
+            text-transform: uppercase;
+            font-weight: 400;
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-top: 3rem; 
+        }
+        
+       
     }
     
 
+}
+
+.attribution {
+    float: right;
+    margin-top: -2rem;
+    margin-right: 3rem;
+    opacity: .5;
+    
+    
+    :link {
+        text-decoration: none;
+        color: black;
+    }
+    a {
+        color: black;
+    }
 }
