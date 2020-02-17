@@ -431,11 +431,408 @@ body {
 }
 
 @media screen and (max-width: 1260px) {
-  .intro p {
+  .intro img#family {
+    margin-right: 2rem;
+  }
+  .middle h1 {
+    font-size: 3rem;
+  }
+  .middle .inset h1 {
+    font-size: 3rem;
+  }
+  .middle .inset img.weWork {
+    margin-top: -14.75rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header img.icon {
+    margin-left: 3rem;
+  }
+  .header nav.nav {
+    margin-right: 3rem;
+  }
+  .intro img#family {
+    width: 40%;
+  }
+  .intro img#rightLines {
+    width: 25%;
+    margin-right: -29rem;
+  }
+  .middle .container {
+    width: 80%;
+  }
+  .middle .left {
+    width: 250px;
+  }
+  .middle .center {
+    width: 250px;
+  }
+  .middle .right {
+    width: 250px;
+  }
+  .middle .inset {
+    width: 80%;
+  }
+  .footer {
+    height: 500px;
+  }
+  .footer .siteMap {
+    width: 80%;
+    margin: 0 auto;
+    font-size: small;
+  }
+  .footer .siteMap div {
+    width: 200px;
+  }
+  .footer .siteMap div.company {
+    margin-left: 3rem;
+  }
+  .attribution {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .middle .inset h1 {
+    position: relative;
+    z-index: 5;
+  }
+  .middle .inset img.weWork {
+    position: relative;
+    right: -29.5%;
+    z-index: 1;
+  }
+  .middle .inset a {
+    top: -75%;
+  }
+  .footer {
+    height: 500px;
+  }
+  .footer .siteMap {
+    width: 80%;
+    margin: 0 auto;
+    font-size: small;
+  }
+  .footer .siteMap div {
+    border: 1px solid red;
+    width: 175px;
+  }
+  .footer .siteMap div.company {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .intro h1.human {
+    margin-left: 4rem;
+    font-size: 2.5rem;
     width: 300px;
   }
+  .intro p {
+    margin-left: 4rem;
+  }
+  .intro .view {
+    margin-left: 4rem;
+  }
+  .middle h1 {
+    font-size: 2.5rem;
+  }
+  .middle .left {
+    width: 200px;
+  }
+  .middle .left img {
+    width: 75px;
+  }
+  .middle .left h3 {
+    font-size: 1.5rem;
+  }
+  .middle .center {
+    width: 200px;
+  }
+  .middle .center img {
+    width: 75px;
+  }
+  .middle .center h3 {
+    font-size: 1.5rem;
+  }
+  .middle .right {
+    width: 200px;
+  }
+  .middle .right img {
+    width: 75px;
+  }
+  .middle .right h3 {
+    font-size: 1.5rem;
+  }
+  .middle .inset h1 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+  }
+  .middle .inset img.weWork {
+    position: relative;
+    right: -32.75%;
+    top: 10%;
+    z-index: 1;
+  }
+  .footer {
+    height: 500px;
+  }
+  .footer .siteMap {
+    width: 80%;
+    margin: 0 auto;
+    font-size: small;
+  }
+  .footer .siteMap div {
+    border: 1px solid red;
+    width: 150px;
+  }
+  .footer .siteMap div.company {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 847px) {
+  .middle .inset img.weWork {
+    position: relative;
+    left: 0%;
+    top: -39%;
+  }
+  .footer .sBox {
+    position: relative;
+    z-index: 2;
+    margin-top: -11rem;
+  }
+  .footer .siteMap {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 826px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .header .nav a {
+    color: #fafafa;
+    margin-left: 1.25rem;
+  }
+  .header #viewP {
+    color: #fafafa;
+    width: 250px;
+    border-color: #fafafa;
+    text-shadow: none;
+    padding-bottom: 0px;
+    line-height: 1.75;
+    font-size: 1.25rem;
+    height: 40px;
+    margin-left: 1.25rem;
+  }
+  .header nav.nav.open {
+    width: 350px;
+  }
+  .header #navBack {
+    display: block;
+    width: 350px;
+    padding-top: 40px;
+  }
+  .nav {
+    padding-top: 15px;
+    display: none;
+    top: 15%;
+    right: 15px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 99;
+    background-color: #2d2640;
+    height: 500px;
+    border: 0.5px solid #fafafa;
+  }
+  nav a {
+    display: inline-block;
+    width: 300px;
+    height: 10%;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .open {
+    display: block;
+  }
+  .intro img#rightLines {
+    margin-right: -23rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .intro img#rightLines {
+    width: 25%;
+    margin-right: 0rem;
+  }
+  .intro img#leftLines {
+    width: 15%;
+  }
   .intro h1.human {
-    font-size: 3rem;
+    margin-left: 2rem;
+  }
+  .intro p {
+    margin-left: 2rem;
+  }
+  .intro #viewP {
+    margin-left: 1rem;
+  }
+  .middle {
+    margin-top: 8rem;
+  }
+  .middle .bar {
+    margin-left: 3rem;
+  }
+  .middle h1 {
+    margin-left: -15rem;
+  }
+  .middle .container {
+    width: 100%;
+  }
+  .middle .inset {
+    width: 100%;
+  }
+  .middle .inset img.weWork {
+    top: 10%;
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  .middle .bar {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .middle h1 {
+    width: 50%;
+    margin: 0 12.5rem;
+    padding-bottom: 5rem;
+  }
+  .middle .inset h1 {
+    margin-top: 3rem;
+  }
+  .middle .inset img.weWork {
+    top: 0%;
+    right: 20%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header {
+    height: 80px;
+  }
+  .intro {
+    height: 1300px;
+  }
+  .intro .bar {
+    display: none;
+  }
+  .intro img#family {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .intro h1.human {
+    position: relative;
+    top: 65%;
+    font-size: 3.5rem;
+    width: 70%;
+    text-align: center;
+    z-index: 3;
+    margin: 0 auto;
+  }
+  .intro #rightLines {
+    display: none;
+  }
+  .intro #leftLines {
+    display: none;
+  }
+  .intro p {
+    position: relative;
+    top: 67%;
+    font-size: 1.25rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro a.view {
+    position: absolute;
+    top: 150%;
+    margin-left: 14rem;
+  }
+  .middle h1 {
+    width: 90%;
+    font-size: 3.5rem;
+    margin-left: 8rem;
+  }
+  .middle .container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .middle .left {
+    width: 90%;
+    height: 300px;
+    float: none;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+  .middle .left img {
+    width: 85px;
+  }
+  .middle .left h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .middle .left p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+  .middle .center {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .middle .center img {
+    width: 85px;
+  }
+  .middle .center h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .middle .center p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+  .middle .right {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    float: none;
+    padding-bottom: 4rem;
+  }
+  .middle .right img {
+    width: 85px;
+  }
+  .middle .right h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .middle .right p {
+    font-size: 1.25rem;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
