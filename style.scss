@@ -708,6 +708,7 @@ body {
         nav.nav.open {
             width: 350px;
         }
+        
         #navBack {
             display: block;
             width: 350px;
@@ -747,10 +748,13 @@ body {
 
     .intro {
         img#rightLines {
-            margin-right: -23rem;;
+            margin-right: -23rem;
         }
     }
-    
+    .open.nav a:hover {
+        color: $veryLightGray;
+        text-decoration: underline;
+    }
 
 }
 
@@ -825,6 +829,10 @@ body {
 @media screen and (max-width: 610px)  {
     .header {
         height: 80px;
+        .open {
+            right: -5%;
+            top: 12.5%;
+        }
     }
     .intro {
         height: 1300px;
@@ -888,7 +896,7 @@ body {
             padding-bottom: 4rem;
             img {
                 width: 85px;
-                
+                margin-left: 15rem;
             }
             h3 {
                 font-size: 2rem;
@@ -907,6 +915,7 @@ body {
             padding-bottom: 4rem;
             img {
                 width: 85px;
+                margin-left: 15rem;
             }
             h3 {
                 font-size: 2rem;
@@ -923,9 +932,10 @@ body {
             width: 90%;
             height: auto;
             float: none;
-            padding-bottom: 4rem;
+            padding-bottom: 10rem;
             img {
                 width: 85px;
+                margin-left: 15rem;
             }
             h3 {
                 font-size: 2rem;
@@ -938,5 +948,49 @@ body {
             }
         }
 
+        .inset {
+            width: 90%;
+            height: 344px;
+            .weWork {
+                display: none;
+            }
+            h1 {
+                
+                
+                width: 75%;
+               text-align: center;
+            }
+            a {
+                top: -25%;
+                margin-right: 12.5rem;
+            }
+        }
+
+    }
+
+    .footer {
+        height: 1200px;
+        #logo {
+            margin-left: 15rem;
+            
+        }
+        .sBox {
+            margin-top: -7rem;
+            margin-right: 15rem;
+        }
+        .siteMap {
+
+            display: flex;
+            flex-flow: column;
+        }
+        .siteMap div {
+            width: 50%;
+            font-size: 1rem;
+            text-align: center;
+        }
+        div.company {
+            margin-top: 3rem;
+            padding-left: 100px;
+        }
     }
 }
