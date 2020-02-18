@@ -99,6 +99,13 @@ body {
        margin-right: -45.265rem;
         
     }
+
+    img.mobileLeft {
+        display: none;
+    }
+    img.mobileRight {
+        display: none;
+    }
     img {
         margin-top: -20.5rem;
         float: right;
@@ -185,7 +192,6 @@ body {
     }
     .container {
         display: flex;
-        border: 1px solid green;
         height: 400px;
         margin: 0 auto;
         width: 1111px;
@@ -193,34 +199,27 @@ body {
     }
     
     .left {
-        
-        border: 1px solid red;
         width: 360px;
     }
     .center {
         width: 300px;
-        border: 1px solid red;
-        
-    
     }
     .right {
         float: right;
-        border: 1px solid red;
-       
-
         width: 360px;
-        
-
     }
 
     .inset {
-        
         width: 1110px;
         max-width: 100%;
         height: 250px;
         max-height: 100%;
         background-color: $darkViolet;
         margin: 0 auto;
+
+        img.weWorkM {
+            display: none;
+        }
         a {
             position: relative;
             z-index: 2;
@@ -269,16 +268,21 @@ body {
 
 
 .footer {
+
     height: 400px;
     margin-top: 10rem;
     background-color: $veryLightGray;
     
+    img.footMobile {
+        display: none;
+    }
     #logo {     
         position: relative;
         float: left; 
         margin-top: 3.75rem;
         margin-left: 10.5rem;
     }
+    
     .footLines {
         margin-left: -17.5rem;
     }
@@ -555,7 +559,6 @@ body {
             margin: 0 auto;
             font-size: small;
             div {
-                border: 1px solid red;
                 width: 175px;
             }
             div.company {
@@ -640,7 +643,6 @@ body {
             margin: 0 auto;
             font-size: small;
             div {
-                border: 1px solid red;
                 width: 150px;
             }
             div.company {
@@ -827,6 +829,9 @@ body {
 }
 
 @media screen and (max-width: 610px)  {
+    body {
+        overflow-x: hidden;
+    }
     .header {
         height: 80px;
         .open {
@@ -838,6 +843,19 @@ body {
         height: 1300px;
         .bar {
             display: none;
+        }
+        img.mobileLeft {
+            display: block;
+            position: relative;
+           right: 240px;
+           top: 810px;
+            z-index: 2;
+        }
+        img.mobileRight {
+            display: block;
+            position: relative;
+            left: 184px;
+            top: 1250px;
         }
         img#family {
             position: absolute;
@@ -952,7 +970,15 @@ body {
             width: 90%;
             height: 344px;
             .weWork {
-                display: none;
+               display: none;
+              
+            }
+            img.weWorkM {
+                display: block;
+                z-index: 2;
+                position: relative;
+                bottom: 90px;
+                right: 5px;
             }
             h1 {
                 
@@ -970,16 +996,27 @@ body {
 
     .footer {
         height: 1200px;
+        img.footMobile {
+            z-index: -99;
+            display: block;
+            width: 100%;
+        }
+        
+        .footLines {
+            display: none;
+        }
         #logo {
             margin-left: 15rem;
-            
+            margin-top: -10rem;
         }
         .sBox {
-            margin-top: -7rem;
-            margin-right: 15rem;
+            margin-top: -5rem;
+            margin-right: 14rem;
+            padding-bottom: 2rem;
+            
         }
         .siteMap {
-
+            
             display: flex;
             flex-flow: column;
         }
@@ -993,4 +1030,211 @@ body {
             padding-left: 100px;
         }
     }
+
+   
 }
+
+@media screen and (max-width: 550px) {
+    .intro {
+        img.mobileLeft {
+            top: 44rem;
+
+        }
+        h1.human {
+            top: 47rem
+        }
+        p {
+            top: 48rem;
+        }
+        .view {
+            top: 50rem;
+            margin: 0 auto;
+        }
+    }
+    .middle {
+        h1 {
+            right: 4rem;
+        }
+        .right {
+            p {
+               justify-items: center;
+            }
+        }
+        .center {
+            p {
+                justify-items: center;
+             } 
+        }
+        .left { 
+            p {
+                justify-items: center;
+               
+             } 
+        }
+        .inset {
+            h1 {
+                left: 4rem;
+            }
+        }
+    }
+    .footer {
+        .sBox {
+            left: 2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .intro {
+        img.mobileLeft {
+            top: 39rem;
+            left: -10rem;
+        }
+        img.mobileRight {
+            top: 70rem;
+        }
+        .view {
+            left: -3rem;
+        }
+    }
+    .middle {
+        h1 {
+          margin-left: 2rem;
+           text-align: left;
+           font-size: 3rem;
+           
+        }
+        .left {
+            img {
+                margin-left: 12rem;
+            }
+            p {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        .center {
+            img {
+                margin-left: 12rem;
+            }
+            p {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        .right {
+            img {
+                margin-left: 12rem;
+            }
+            p {
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+        .inset {
+            h1 {
+               left: 2rem;
+            }
+            a {
+                margin-right: 7rem;
+            }
+            img.weWorkM {
+                bottom: 1rem;
+                left: 17rem;
+            }
+        }
+    }
+    .footer {
+       .sBox {
+           
+           margin-right: 11rem;
+       }
+
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    body {
+        
+        overflow-x: auto;
+    }
+    .header {
+       nav.nav.open {
+           right: -10%;
+       }
+    }
+
+    .intro {
+        height: 1200px;;
+        img.mobileLeft {
+            top: 27rem;
+            left: -1.5rem;
+        }
+        h1.human {
+            top: 35rem;
+        }
+        p {
+            top: 37rem;
+        }
+        a.view {
+            top: 68rem;
+            margin-left: 10rem;
+        }
+        img.mobileRight {
+            top: 63rem;
+        }
+
+    }
+    
+        .middle {
+            h1 {
+            
+            margin-left: 2rem;
+            }
+            .left {
+                img {
+                    margin-left: 8rem;
+                }
+               
+            }
+            .center {
+                img {
+                    margin-left: 8rem;
+                }
+           
+            }
+            .right {
+                img {
+                    margin-left: 8rem;
+                }
+        }
+        .inset {
+            img.weWorkM {
+                bottom: 8rem;
+                left: 0rem;
+            }
+    }
+
+}
+
+.footer {
+    img#logo {
+        margin-left: 9rem;
+    }
+    div.sBox {
+        margin-right: 9rem;
+    }
+   .siteMap {
+    div.company {
+        margin-left: -1rem;
+    }
+   }
+
+}
+}      

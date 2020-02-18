@@ -90,6 +90,14 @@ body {
   margin-right: -45.265rem;
 }
 
+.intro img.mobileLeft {
+  display: none;
+}
+
+.intro img.mobileRight {
+  display: none;
+}
+
 .intro img {
   margin-top: -20.5rem;
   float: right;
@@ -180,7 +188,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid green;
   height: 400px;
   margin: 0 auto;
   width: 1111px;
@@ -189,18 +196,15 @@ body {
 }
 
 .middle .left {
-  border: 1px solid red;
   width: 360px;
 }
 
 .middle .center {
   width: 300px;
-  border: 1px solid red;
 }
 
 .middle .right {
   float: right;
-  border: 1px solid red;
   width: 360px;
 }
 
@@ -211,6 +215,10 @@ body {
   max-height: 100%;
   background-color: #2d2640;
   margin: 0 auto;
+}
+
+.middle .inset img.weWorkM {
+  display: none;
 }
 
 .middle .inset a {
@@ -256,6 +264,10 @@ body {
   height: 400px;
   margin-top: 10rem;
   background-color: #fafafa;
+}
+
+.footer img.footMobile {
+  display: none;
 }
 
 .footer #logo {
@@ -515,7 +527,6 @@ body {
     font-size: small;
   }
   .footer .siteMap div {
-    border: 1px solid red;
     width: 175px;
   }
   .footer .siteMap div.company {
@@ -584,7 +595,6 @@ body {
     font-size: small;
   }
   .footer .siteMap div {
-    border: 1px solid red;
     width: 150px;
   }
   .footer .siteMap div.company {
@@ -729,6 +739,9 @@ body {
 }
 
 @media screen and (max-width: 610px) {
+  body {
+    overflow-x: hidden;
+  }
   .header {
     height: 80px;
   }
@@ -741,6 +754,19 @@ body {
   }
   .intro .bar {
     display: none;
+  }
+  .intro img.mobileLeft {
+    display: block;
+    position: relative;
+    right: 240px;
+    top: 810px;
+    z-index: 2;
+  }
+  .intro img.mobileRight {
+    display: block;
+    position: relative;
+    left: 184px;
+    top: 1250px;
   }
   .intro img#family {
     position: absolute;
@@ -852,6 +878,13 @@ body {
   .middle .inset .weWork {
     display: none;
   }
+  .middle .inset img.weWorkM {
+    display: block;
+    z-index: 2;
+    position: relative;
+    bottom: 90px;
+    right: 5px;
+  }
   .middle .inset h1 {
     width: 75%;
     text-align: center;
@@ -863,12 +896,22 @@ body {
   .footer {
     height: 1200px;
   }
+  .footer img.footMobile {
+    z-index: -99;
+    display: block;
+    width: 100%;
+  }
+  .footer .footLines {
+    display: none;
+  }
   .footer #logo {
     margin-left: 15rem;
+    margin-top: -10rem;
   }
   .footer .sBox {
-    margin-top: -7rem;
-    margin-right: 15rem;
+    margin-top: -5rem;
+    margin-right: 14rem;
+    padding-bottom: 2rem;
   }
   .footer .siteMap {
     display: -webkit-box;
@@ -887,6 +930,150 @@ body {
   .footer div.company {
     margin-top: 3rem;
     padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .intro img.mobileLeft {
+    top: 44rem;
+  }
+  .intro h1.human {
+    top: 47rem;
+  }
+  .intro p {
+    top: 48rem;
+  }
+  .intro .view {
+    top: 50rem;
+    margin: 0 auto;
+  }
+  .middle h1 {
+    right: 4rem;
+  }
+  .middle .right p {
+    justify-items: center;
+  }
+  .middle .center p {
+    justify-items: center;
+  }
+  .middle .left p {
+    justify-items: center;
+  }
+  .middle .inset h1 {
+    left: 4rem;
+  }
+  .footer .sBox {
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .intro img.mobileLeft {
+    top: 39rem;
+    left: -10rem;
+  }
+  .intro img.mobileRight {
+    top: 70rem;
+  }
+  .intro .view {
+    left: -3rem;
+  }
+  .middle h1 {
+    margin-left: 2rem;
+    text-align: left;
+    font-size: 3rem;
+  }
+  .middle .left img {
+    margin-left: 12rem;
+  }
+  .middle .left p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .middle .center img {
+    margin-left: 12rem;
+  }
+  .middle .center p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .middle .right img {
+    margin-left: 12rem;
+  }
+  .middle .right p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .middle .inset h1 {
+    left: 2rem;
+  }
+  .middle .inset a {
+    margin-right: 7rem;
+  }
+  .middle .inset img.weWorkM {
+    bottom: 1rem;
+    left: 17rem;
+  }
+  .footer .sBox {
+    margin-right: 11rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    overflow-x: auto;
+  }
+  .header nav.nav.open {
+    right: -10%;
+  }
+  .intro {
+    height: 1200px;
+  }
+  .intro img.mobileLeft {
+    top: 27rem;
+    left: -1.5rem;
+  }
+  .intro h1.human {
+    top: 35rem;
+  }
+  .intro p {
+    top: 37rem;
+  }
+  .intro a.view {
+    top: 68rem;
+    margin-left: 10rem;
+  }
+  .intro img.mobileRight {
+    top: 63rem;
+  }
+  .middle h1 {
+    margin-left: 2rem;
+  }
+  .middle .left img {
+    margin-left: 8rem;
+  }
+  .middle .center img {
+    margin-left: 8rem;
+  }
+  .middle .right img {
+    margin-left: 8rem;
+  }
+  .middle .inset img.weWorkM {
+    bottom: 8rem;
+    left: 0rem;
+  }
+  .footer img#logo {
+    margin-left: 9rem;
+  }
+  .footer div.sBox {
+    margin-right: 9rem;
+  }
+  .footer .siteMap div.company {
+    margin-left: -1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
