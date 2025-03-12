@@ -7,7 +7,7 @@
 
 > A FrontEnd Mentor challenge: Insure LP
 
-### ✨ [Demo](https://venomous-detail.surge.sh/)
+
 
 ## Author
 
